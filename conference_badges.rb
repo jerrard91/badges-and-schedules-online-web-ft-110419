@@ -16,10 +16,8 @@ end
 
 def assign_rooms(attendees)
   array = attendees
-  counter = 1
-  array.each_with_index do |attendees|
+  array.each_with_index.map do |attendees|
     puts "Hello, #{attendees}! You'll be assigned to room #{counter}."
-    counter += 1
     "Hello, #{attendees}! You'll be assigned to room #{counter}."
   end
 end
